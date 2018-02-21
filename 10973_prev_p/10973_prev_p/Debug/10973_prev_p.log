@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\users\cheol\source\repos\practice\10973_prev_p\10973_prev_p\main.cpp(33): warning C4101: 'cnt_j' :참조되지 않은 지역 변수입니다.
+  10973_prev_p.vcxproj -> C:\Users\Cheol\Source\Repos\practice\10973_prev_p\Debug\10973_prev_p.exe
+  10973_prev_p.vcxproj -> C:\Users\Cheol\Source\Repos\practice\10973_prev_p\Debug\10973_prev_p.pdb (Partial PDB)

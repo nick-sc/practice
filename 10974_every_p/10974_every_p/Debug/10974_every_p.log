@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\users\cheol\source\repos\practice\10974_every_p\10974_every_p\main.cpp(33): warning C4101: 'cnt_j' :참조되지 않은 지역 변수입니다.
+  10974_every_p.vcxproj -> C:\Users\Cheol\Source\Repos\practice\10974_every_p\Debug\10974_every_p.exe
+  10974_every_p.vcxproj -> C:\Users\Cheol\Source\Repos\practice\10974_every_p\Debug\10974_every_p.pdb (Partial PDB)
