@@ -2,63 +2,45 @@
 
 using namespace std;
 
+int _isP(int k)
+{
+	for (int j = 2; j*j <= k; j++)
+	{
+		if (k % j == 0)
+		{
+			return 0;
+		}
+	}
+
+	return 1;
+}
+
 
 int main()
 {
-	char str[101] = { 0 };
-	int cnt = 0;
+	int tc;
+	int gold;
+	
+	cin >> tc;
 
-	cin >> str;
-
-	for (int i = 0; i < 101; i++)
+	while (tc--)
 	{
-		if (str[i] == '\0' || str[i] == ' ')
+		cin >> gold;
+		if (gold == 0)
 			break;
-		else if (str[i] == 'c' && str[i + 1] == '=')
+
+		for (int i = gold/2; i > 1; i--)
 		{
-			cnt++;
-			i++;
+			if (_isP(i))
+			{
+				if (_isP(gold - i))
+				{
+					cout << i << " " << gold - i << "\n";
+					break;
+				}
+			}
 		}
-		else if (str[i] == 'c' && str[i + 1] == '-')
-		{
-			cnt++;
-			i++;
-		}
-		else if (str[i] == 'd' && str[i + 1] == 'z' && str[i + 2] == '=')
-		{
-			cnt++;
-			i += 2;
-		}
-		else if (str[i] == 'd' && str[i + 1] == '-')
-		{
-			cnt++;
-			i++;
-		}
-		else if (str[i] == 'l' && str[i + 1] == 'j')
-		{
-			cnt++;
-			i++;
-		}
-		else if (str[i] == 'n' && str[i + 1] == 'j')
-		{
-			cnt++;
-			i++;
-		}
-		else if (str[i] == 's' && str[i + 1] == '=')
-		{
-			cnt++;
-			i++;
-		}
-		else if (str[i] == 'z' && str[i + 1] == '=')
-		{
-			cnt++;
-			i++;
-		}
-		else
-			cnt++;			
 	}
-
-	cout << cnt;
-
+		
 	return 0;
 }
