@@ -1,0 +1,5 @@
+﻿  main.cpp
+c:\users\cheol\source\repos\practice\11049_matrix\11049_matrix\main.cpp(12): warning C4244: 'return': '__int64'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\cheol\source\repos\practice\11049_matrix\11049_matrix\main.cpp(27): warning C4244: 'return': '__int64'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  11049_matrix.vcxproj -> C:\Users\Cheol\Source\Repos\practice\11049_matrix\Debug\11049_matrix.exe
+  11049_matrix.vcxproj -> C:\Users\Cheol\Source\Repos\practice\11049_matrix\Debug\11049_matrix.pdb (Partial PDB)
